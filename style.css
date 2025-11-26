@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e2e7e6;
+}
+/*  header */
+header {
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header > div:not(.search) {
+  padding: 5px;
+  cursor: pointer;
+}
+header > div:not(.search):hover {
+  border: 1px solid white;
+}
+
+header .logo {
+  width: 100px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+header .adress .top {
+  font-size: 13.6px;
+  color: #ccc;
+}
+header .adress .bottom {
+  font-size: 16px;
+}
+
+header .search {
+  display: flex;
+  justify-content: space-evenly;
+  width: 620px;
+  height: 40px;
+}
+header .search select {
+  width: 80px;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+}
+
+header .search input {
+  width: 100%;
+  text-indent: 10px;
+}
+header .search button {
+  width: 45px;
+  display: grid;
+  place-items: center;
+  background-color: #fabd68;
+  border-radius: 0 4px 4px 0;
+}
+
+header .navigation-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+header .navigation-item span {
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
+}
+header .navigation-item p {
+  font-weight: bold;
+  font-size: 14px;
+}
+header .basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+header .basket i {
+  font-size: 30px;
+}
+/* panel */
+
+.panel {
+  background-color: #212f3d;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  color: white;
+}
+.panel .left .panel-options p:hover,
+.panel .right:hover {
+  border: 1px solid white;
+}
+.panel .left {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.panel .left {
+  cursor: pointer;
+}
+.panel .left .panel-options {
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
+}
+.panel .left .panel-options p {
+  font-size: 15px;
+  padding: 5px;
+}
+.panel .right p {
+  font-weight: bold;
+  padding: 5px;
+}
+/* hero */
+
+.hero {
+  background-image: url(images/hero_image.jpg);
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.hero .hero-text {
+  background-color: #ffffff;
+  width: 90%;
+  height: 40px;
+  padding: 10px 30px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.hero .hero-text a {
+  color: #92bdc6;
+}
+
+/* categories */
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 50px 20px;
+  gap: 10px;
+}
+.categories .category-box {
+  background-color: white;
+  padding: 20px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.categories .category-box .category-box-image {
+  width: 100%;
+  height: 300px;
+}
+
+.categories .category-box .category-box-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.categories .category-box h2 {
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.categories .category-box button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  margin-top: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #92bdc6;
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.categories .category-box button:hover {
+  border: 2px solid #92bdc6;
+}
+/* discounts */
+
+.discounts {
+  padding: 20px;
+}
+.discounts .top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.discounts .top a {
+  color: #92bdc6;
+}
+.discounts .top a:hover {
+  text-decoration: underline;
+}
+.discounts .discount-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.discounts .discount-wrapper .discount-card {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.discounts .discount-wrapper .discount-card .image {
+  width: 100%;
+  height: 300px;
+}
+.discounts .discount-wrapper .discount-card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.discounts .discount-wrapper .discount-card .content p {
+  font-size: 15px;
+  white-space: nowrap;
+  color: crimson;
+  margin: 10px 0;
+}
+.discount-wrapper .discount-card .content span {
+  background-color: crimson;
+  color: white;
+  padding: 5px;
+}
+.discount-wrapper .discount-card .content .title {
+  color: black;
+  font-weight: 500;
+}
+
+/* footer  */
+
+footer .footer-top {
+  background-color: #364759;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+footer .footer-top:hover {
+  background-color: #4d5c6b;
+}
+
+footer .footer-top a {
+  color: white;
+  font-size: 14px;
+}
+.footer-bottom {
+  background-color: #212f3d;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 20px;
+  gap: 20px;
+}
+.footer-bottom .footer-bottom-item {
+  font-size: 18px;
+}
+.footer-bottom .footer-bottom-item ul {
+  margin-top: 10px;
+}
+.footer-bottom .footer-bottom-item ul li a {
+  color: rgba(200, 200, 200, 0.815);
+  font-size: 15px;
+  transition: all 0.4s ease;
+}
+
+.footer-bottom .footer-bottom-item ul li a:hover {
+  color: #fabd68;
+}
+
+@media (max-width: 1210px) {
+  header .adress {
+    display: none;
+  }
+
+  header .navigation-item {
+    display: none;
+  }
+
+  header .search {
+    width: 500px;
+  }
+
+  .panel .left .panel-options {
+    display: none;
+  }
+
+  .discounts .top a {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  header .basket {
+    display: none;
+  }
+}
+
+@media (max-width: 810px) {
+  .hero .hero-text {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .discounts .top h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bottom-item {
+    text-align: center;
+  }
+}
