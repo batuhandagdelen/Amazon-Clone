@@ -1,6 +1,6 @@
 # 🛒 Amazon Clone
 
-Amazon Türkiye arayüzünden ilham alınarak tasarlanmış modern bir e-ticaret sitesi klonu. Kullanıcı dostu tasarımı, kategori filtreleme ve indirim kartlarıyla gerçekçi bir alışveriş deneyimi sunar.  
+Amazon Türkiye arayüzünden ilham alınarak tasarlanmış modern bir e-ticaret sitesi clone projesidir. Kullanıcı dostu tasarımı, kategori filtreleme ve indirim kartlarıyla gerçekçi bir alışveriş deneyimi sunar.  
 
 
 
@@ -29,6 +29,7 @@ Amazon Türkiye arayüzünden ilham alınarak tasarlanmış modern bir e-ticaret
 - Responsive ve mobil uyumlu tasarım  
 - Footer ile bilgi ve link bölümleri  
 - Modern ve sade görsel tasarım  
+
 
 
 
